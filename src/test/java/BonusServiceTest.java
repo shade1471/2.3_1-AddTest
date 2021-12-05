@@ -67,7 +67,7 @@ class BonusServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    void shouldCalculateForUnregisteredAndBoundaryValuesBeforeLimit() {
+    void shouldCalculateForUnregisteredAndBoundaryValuesUnderLimit() {
         BonusService service = new BonusService();
 
         // подготавливаем данные:
@@ -83,7 +83,7 @@ class BonusServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    void shouldCalculateForUnregisteredAndBoundaryValuesAfterLimit() {
+    void shouldCalculateForUnregisteredAndBoundaryValuesOverLimit() {
         BonusService service = new BonusService();
 
         // подготавливаем данные:
@@ -99,7 +99,7 @@ class BonusServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    void shouldCalculateForRegisteredAndBoundaryValuesBeforeLimit() {
+    void shouldCalculateForRegisteredAndBoundaryValuesUnderLimit() {
         BonusService service = new BonusService();
 
         // подготавливаем данные:
@@ -115,7 +115,7 @@ class BonusServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    void shouldCalculateForRegisteredAndBoundaryValuesAfterLimit() {
+    void shouldCalculateForRegisteredAndBoundaryValuesOverLimit() {
         BonusService service = new BonusService();
 
         // подготавливаем данные:
